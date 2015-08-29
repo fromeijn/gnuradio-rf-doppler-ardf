@@ -143,15 +143,15 @@ void set_usart_txrx_direction(USART_t *usart)
   #endif
   #ifdef USARTF0
    if ( (uint16_t) usart == (uint16_t) &USARTF0) {
-     PORTE.DIRSET      = PIN3_bm;
-     PORTE.DIRCLR      = PIN2_bm;
+     PORTF.DIRSET      = PIN3_bm;
+     PORTF.DIRCLR      = PIN2_bm;
      return;
    }
   #endif
   #ifdef USARTF1
    if ( (uint16_t) usart == (uint16_t) &USARTF1) {
-     PORTE.DIRSET      = PIN7_bm;
-     PORTE.DIRCLR      = PIN6_bm;
+     PORTF.DIRSET      = PIN7_bm;
+     PORTF.DIRCLR      = PIN6_bm;
      return;
    }
   #endif

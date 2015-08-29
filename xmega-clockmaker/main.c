@@ -97,6 +97,8 @@ ISR(TCC0_OVF_vect)
 
 	DACB.CH0DATA = todac<<10;
 	//DACB.CH0DATA = 0xfff;
+	_delay_ms(1);
+	PORTF.OUT = 0;
 }
 
 
